@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import { Coins, Hero, CoinDetails } from "./components";
 
 function App() {

@@ -1,5 +1,16 @@
+import { Navbar, Services, Transaction, Welcome } from "../components";
+
 const Hero = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transaction />
+    </div>
+  );
 };
 
 export default Hero;
