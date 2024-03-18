@@ -1,7 +1,23 @@
+import { ColorRing } from "react-loader-spinner";
 const Loader = () => {
   return (
-    <div className="flex justify-center items-center py-3">
-      <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-red-700"></div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
+      <ColorRing
+        visible={true}
+        height="100"
+        width="100"
+        ariaLabel="color-ring-loading"
+        wrapperStyle={{}}
+        wrapperClass="color-ring-wrapper"
+        colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
+      />
     </div>
   );
 };
